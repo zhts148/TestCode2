@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TestCode2.Model;
 
@@ -12,6 +14,7 @@ namespace TestCode2.Controllers
     [Route("api/User")]
     public class UserController : Controller
     {
+        [HttpGet]
         public string GetUserList()
         {
             string s = "";
