@@ -37,16 +37,16 @@ namespace TestCode2.Controllers
                 ID = 4,
                 Name = "ddd"
             };
-            //UserModel um5 = new UserModel()
-            //{
-            //    ID = 5,
-            //    Name = "eee"
-            //};
+            UserModel um5 = new UserModel()
+            {
+                ID = 5,
+                Name = "eee"
+            };
             list.Add(um);
             list.Add(um2);
             list.Add(um3);
             list.Add(um4);
-            //list.Add(um5);
+            list.Add(um5);
             s = Newtonsoft.Json.JsonConvert.SerializeObject(list);
             return s;
         }
