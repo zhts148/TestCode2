@@ -35,6 +35,12 @@ namespace TestCode2
             }
 
             app.UseMvc();
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "api/{controller}/{action}/{id}");
+            //});
         }
     }
 }

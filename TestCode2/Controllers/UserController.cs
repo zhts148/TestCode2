@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TestCode2.Model;
 
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 namespace TestCode2.Controllers
 {
-    [Route("api/User")]
+    [Route("api/[controller]/[action]")]
     public class UserController : Controller
     {
-        [HttpGet]
+        [HttpGet] // Matches '/Products/List'
         public string GetUserList()
         {
             string s = "";
@@ -51,5 +50,6 @@ namespace TestCode2.Controllers
             s = Newtonsoft.Json.JsonConvert.SerializeObject(list);
             return s;
         }
+        
     }
 }

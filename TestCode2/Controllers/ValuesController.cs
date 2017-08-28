@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TestCode2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Values")]
     public class ValuesController : Controller
     {
         // GET api/values
@@ -20,7 +20,7 @@ namespace TestCode2.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "value"+ id;
         }
 
         // POST api/values
