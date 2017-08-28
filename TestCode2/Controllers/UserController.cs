@@ -10,7 +10,6 @@ using TestCode2.Model;
 
 namespace TestCode2.Controllers
 {
-    [Produces("application/json")]
     [Route("api/User")]
     public class UserController : Controller
     {
