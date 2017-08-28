@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  testcode2:
+    image: testcode2
+    build:
+      context: ./TestCode2
+      dockerfile: Dockerfile
